@@ -6,7 +6,10 @@ def contador(texto):
         if( i == ' '):
             palabras += 1
     return palabras
+def main():
+    ejemplo = input("Introduce la frase ")
+    total = contador(ejemplo)
+    print(total)
 
-ejemplo = input("Introduce la frase ")
-total = contador(ejemplo)
-print(total)
+if __name__ == "__main__":
+    main()

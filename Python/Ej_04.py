@@ -11,9 +11,12 @@ def adivinaNumero(num,real):
     else:
         print("Has ganado")
         return True
+def main():
+    numero = random.randint(0,10)
 
-numero = random.randint(0,10)
-
-ad = int(input("Introduce el numero"))
-while(not adivinaNumero(ad,numero)):
     ad = int(input("Introduce el numero"))
+    while(not adivinaNumero(ad,numero)):
+        ad = int(input("Introduce el numero"))
+
+if __name__ == "__main__":
+    main()
